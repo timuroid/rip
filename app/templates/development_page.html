@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+{% load static %}
+
+<div class="container">
+    <div class="development-page-card">
+        <!-- Здесь добавь контент услуги -->
+        <div class="development-page-card-name">{{ development.name }}</div>
+        <img src="{{ development.image }}">
+        <div class="development-page-card-description">
+            {{ development.description }}
+        </div>
+        <div class="development-page-card-price">{{ development.price }}</div>
+            
+    </div>
+</div>
+
+{% endblock content %}

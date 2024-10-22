@@ -1,0 +1,20 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KTS</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    
+</head>
+<body>
+
+        {% include "header.html" %}
+
+        {% block content %}
+
+        {% endblock content %}
+
+</body>
+</html>

@@ -1,0 +1,412 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght,ELGR,ELSH@100..900,1..2,0..16&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+body{
+    margin: 0px ;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 5px solid #000000;
+    padding: 0 32px;
+    height: 100px;
+    
+}
+
+.logo {
+    font-family: 'Handjet';
+    font-size: 64px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: #32FF00; 
+}
+
+
+.developments {
+    position: relative;
+}
+
+.developments img {
+    height: 62px;
+    width: 60px;
+}
+
+.developments .count {
+    font-family: 'Source Code Pro';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.for-folder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0 64px;
+    height: 100px;
+
+}
+
+
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 32px 32px;
+    padding: 32px 64px 32px 64px;
+}
+
+.development-page-card {
+    grid-column-start: 1;
+    grid-column-end: end;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 32px 32px;
+
+
+    background-color: white;
+    border: 5px solid black;
+    padding: 32px 0px 32px 0px;
+    border-radius: 30px;
+    
+}
+
+.development-page-card-name {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row: 1;
+    font-family: 'Handjet';
+    font-size: 64px;
+    font-weight: bold;
+    color: #000000;
+
+}
+
+.development-page-card img {
+    grid-column-start: 10;
+    grid-column-end: 12;
+    justify-self: right;
+    grid-row: span 2;
+    height: 120px;
+    width: 120px;
+
+}
+
+.development-page-card-description {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row: 2;
+    font-family: 'Source Code Pro';
+    font-size: 36px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.development-page-card-price {
+    grid-column-start: 9;
+    grid-column-end: 12;
+    justify-self: end;
+    grid-row: 3;
+    font-family: 'Source Code Pro';
+    font-size: 48px;
+    font-weight: 400;
+    color: #000000;
+    width: auto;
+    text-align: right;
+}
+
+
+
+.search-bar{
+    grid-column: span 12;
+    grid-row: 1;
+    height: 64px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1; 
+    gap: 32px;
+}
+
+.search-bar-btn{
+    grid-column: span 2;
+    
+    grid-row: 1;
+
+    align-self: end;
+
+    height: 45px;
+
+    background-color: black;
+    border-radius: 10px;
+
+
+    font-family: 'Source Code Pro';
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.search-bar-input {
+    grid-column: span 10;
+    grid-row: 1;
+
+
+    width: 100%;
+    border: none;
+    outline: none;
+
+    font-family: 'Source Code Pro';
+    font-size: 48px;
+    font-weight: 500;
+    color: #32FF00;
+
+    border-bottom: 5px solid black;
+}
+
+.search-bar-input::placeholder {
+    color: #ccc;
+}
+
+
+
+.developments-card{
+    grid-column: span 6;
+    height: 260px;
+    border-radius: 20px;
+    background-color: black;
+    
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+
+}
+
+.developments-card-name {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+    font-family: 'Handjet';
+    font-size: 64px;
+    font-weight: bold;
+    color: #fff;
+    
+}
+
+.developments-card img{
+    grid-column-start: 2;
+    grid-column-end: end;
+    grid-row: 1;
+    justify-self: right;
+    height: 120px;
+    width: 120px;
+}
+
+.developments-card-price{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2;
+
+    justify-self: start;
+    align-self: end;
+
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    font-family: 'Source Code Pro';
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.developments-card-btn{
+    grid-column-start: 2;
+    grid-column-end: end;
+    grid-row: 2;
+
+    justify-self: end;
+    align-self: end;
+
+    height: 45px;
+    width: 200px;
+
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Source Code Pro';
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.developments-card-btn:hover{
+    background-color: #32FF00;
+    border: 1px solid black;
+    color: black;
+
+}
+
+.service-page-card{
+
+    grid-column-start: 1;
+    grid-column-end: end;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 32px 32px;
+
+
+    background-color: white;
+    border: 5px solid black;
+    padding: 32px 0px 32px 0px;
+    border-radius: 30px;
+}
+
+.service-page-card-txt-block{
+    grid-column-start: 2;
+    grid-column-end: 12;
+
+    display: grid;
+    grid-template-rows: auto;
+    gap: 8px;
+}
+
+.service-page-card-question{
+
+    grid-row: 1;
+
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    font-family: 'Source Code Pro';
+    font-size: 48px;
+    font-weight: 600;
+    color: black;
+
+}
+
+.service-page-card-answer{
+
+    grid-row: 2;
+
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    font-family: 'Source Code Pro';
+    font-size: 48px;
+    font-weight: 600;
+    color: #32FF00;
+
+    border-bottom: 5px solid black;
+}
+
+
+.service-page-card-sum{
+
+    grid-row: 2;
+
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    font-family: 'Source Code Pro';
+    font-size: 48px;
+    font-weight: 600;
+    color: black;
+
+}
+
+.service-page-card-card-block{
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    gap:32px;
+
+}
+
+.service-page-card-card{
+    grid-column: span 1;
+    grid-row: span 1;
+
+    
+
+    background-color: white;
+    border: 5px solid black;
+    padding: 16px;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+.service-page-card-card-name{
+    grid-column: span 1;
+    grid-row: span 2;
+    font-family: 'Handjet';
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+}
+
+.service-page-card-card img {
+    grid-column: span 1;
+    grid-row: span 1;
+    justify-self: end;
+    align-self: start;
+    height: 60px;
+    width: 60px;
+}
+
+.service-page-card-card-price{
+    grid-column: span 1;
+    grid-row: span 1;
+
+    justify-self: end;
+    align-self: end;
+
+
+    font-family: 'Source Code Pro';
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}

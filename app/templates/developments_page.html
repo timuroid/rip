@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="for-folder">
+        <div class="developments">
+            <a href="/services/{{ draft_service.id }}/">
+                <img src="http://localhost:9000/images/header.png">
+            </a>
+            <span class="count">{{ developments_count }}</span>
+        </div>
+    </div>
+
+    <main class="container">
+
+        <form class="search-bar" action="/" method="GET">
+
+            <input type="text" class="search-bar-input" placeholder="СЮДА МОЖНО ЧТО-ТО ВВЕСТИ" name="development_name" value="{{ developments.name }}">
+            <button type="submit" class="search-bar-btn">поиск</button>
+
+        </form>
+        
+        {% for development in developments %}
+            {% include "development_card.html" %}
+        {% endfor %}
+    </main>
+{% endblock content %}
+

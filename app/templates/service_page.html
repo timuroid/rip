@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <div class="service-page-card">
+            <div class="service-page-card-txt-block">
+                <div class="service-page-card-question">
+                    МЕНЯ ЗОВУТ 
+                </div>
+                <div class="service-page-card-answer">
+                    {{service.name}}
+                </div>
+            </div>
+            <div class="service-page-card-txt-block">
+                <div class="service-page-card-question">
+                    Я ПРЕДСТАВЛЯЮ КОМПАНИЮ 
+                </div>
+                <div class="service-page-card-answer">
+                    {{service.company}}
+                </div>
+            </div>
+            <div class="service-page-card-txt-block">
+                <div class="service-page-card-question">
+                    СВЯЖИТЕСЬ СО МНОЙ ПО ПОЧТЕ
+                </div>
+                <div class="service-page-card-answer">
+                    {{service.email}}
+                </div>
+            </div>
+            <div class="service-page-card-txt-block">
+                <div class="service-page-card-question">
+                    ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ 
+                </div>
+                <div class="service-page-card-answer">
+                    {{service.info}}
+                </div>
+            </div>
+            <div class="service-page-card-txt-block">
+                <div class="service-page-card-question">
+                    НАМ НУЖНО:
+                </div>
+            </div>
+            <div class="service-page-card-txt-block">
+                <div class="service-page-card-card-block">
+                    {% for development in developments %}
+
+                    {% include "service_page_card.html" %}
+    
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="service-page-card-txt-block">
+                <div class="service-page-card-question">
+                    ИТОГ:
+                </div>
+                <div class="service-page-card-sum">
+                    от 150 тыс.р.
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+{% endblock content %}

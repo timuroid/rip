@@ -1,0 +1,15 @@
+{% load static %}
+
+
+<div class="developments-card">
+    <div class="developments-card-name">{{ development.name }}</div>
+    <img src="{{ development.image }}">
+    <div class="developments-card-price">{{ development.price }}</div>
+    <a href="/developments/{{ development.id }}/" class="developments-card-btn">
+        подробнее
+    </a>
+</div>
+
+
+
+
